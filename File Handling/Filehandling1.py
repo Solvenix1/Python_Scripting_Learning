@@ -109,38 +109,38 @@
 
 #====================
 #Reading files in python
-import os
-import csv
-import json
+# import os
+# import csv
+# import json
 
-file_path = "C:/Users/Suleyman/Documents/Coding/Python/Scripting/File Handling/Employees.txt"
+# file_path = "C:/Users/Suleyman/Documents/Coding/Python/Scripting/File Handling/Employees.txt"
 
-try:
-    with open(file=file_path, mode="r") as file:
-        content = file.read()
-        print(content)
-except FileNotFoundError:
-    print("There is no such file")
-except PermissionError:
-    print("Permission denied")
+# try:
+#     with open(file=file_path, mode="r") as file:
+#         content = file.read()
+#         print(content)
+# except FileNotFoundError:
+#     print("There is no such file")
+# except PermissionError:
+#     print("Permission denied")
 
-file_path_json = "C:/Users/Suleyman/Documents/Coding/Python/Scripting/File Handling/Employees.json"
+# file_path_json = "C:/Users/Suleyman/Documents/Coding/Python/Scripting/File Handling/Employees.json"
 
 
-try:
-    with open(file=file_path_json, mode="r") as file:
-        content = json.load(file)
-        print(content["Job"])
-except FileNotFoundError:
-    print("File not found")
-except KeyError:
-    print("This keyword not found")
+# try:
+#     with open(file=file_path_json, mode="r") as file:
+#         content = json.load(file)
+#         print(content["Job"])
+# except FileNotFoundError:
+#     print("File not found")
+# except KeyError:
+#     print("This keyword not found")
 
-file_path_csv = "C:/Users/Suleyman/Documents/Coding/Python/Scripting/File Handling/Employees.csv"
-try:
-    with open(file=file_path_csv, mode = "r") as file:
-        content = csv.reader(file)
-        for line in content:
-            print(line[0])
-except FileNotFoundError:
-    print("File not found")
+# file_path_csv = "C:/Users/Suleyman/Documents/Coding/Python/Scripting/File Handling/Employees.csv"
+# try:
+#     with open(file=file_path_csv, mode = "r") as file:
+#         content = csv.reader(file)
+#         for line in content:
+#             print(line[0])
+# except FileNotFoundError:
+#     print("File not found")

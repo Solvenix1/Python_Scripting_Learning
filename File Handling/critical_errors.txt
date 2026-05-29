@@ -1,0 +1,2 @@
+[ERROR] 10:05 AM - Failed to connect to server
+[ERROR] 10:10 AM - Connection timeout

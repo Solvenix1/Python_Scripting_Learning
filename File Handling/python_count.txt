@@ -1,0 +1,3 @@
+Python is snake
+Is Python good?
+Python make file handling easy.

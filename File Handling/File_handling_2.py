@@ -1,6 +1,7 @@
 import os
 import json
 import csv
+from pathlib import Path
 
 #exercise 1-2
 # file_path = "users.txt"
@@ -117,26 +118,75 @@ import csv
 
 #exercise 14
 # n = 3
-# 
 # file_path = "read_n_lines.txt"
+# with open(file_path, "r") as file:
+#     for i, line in enumerate(file):
+#         if i > n:
+#             break
+#         print(line)
+
+
 # with open(file_path, "r") as file:
 #     for _ in range(n):
 #         print(file.readline().strip())
 
+
+
 #exercise 15
-n = 3 
-i = 0
-file_path = "read_lastn_lines.txt"
-with open(file_path, "r") as file:
-    content = file.readlines()
-    for line in content[-n:]:
-        print(line.strip())
+# n = 4
+# file_path = "read_n_lines.txt"
+# with open(file_path, "r") as file:
+#     for i in file.readlines()[-n:]:
+#         print(i.strip())
 
+#exercise 16
+# targets = {1,3,5}
+
+# file_path = "read_n_lines.txt"
+# # with open(file_path, "r") as file:
+# #     for i in file.readlines():
+# #         for x in i:
+# #             if x in targets:
+# #                 print(i.strip())
+
+# with open(file_path, "r") as file:
+#     for line_num, line in enumerate(file, start = 1):
+#         if line_num in targets:
+#             print(line.strip())
+
+#exercise 17
+# mem = ""
+# length = 0
+# file_path = "long_words.txt"
+# with open(file_path, "r") as file:
+#     for word in file.read().split():
+#         if len(word) > length:
+#             length = len(word)
+#             mem = word
+# print(f"Longest word: {mem}")
+
+# longest = ""
+# with open(file_path, "r") as file:
+#     words = file.read().split()
+# for word in words:
+#     if len(word) > len(longest):
+#         longest = word
+# print(longest)
+
+#exercise 18
+freq = {}
+
+with open("Letter_count.txt", "r") as file:
+    content = file.read().lower()
+for letter in content:
+    if letter.isalpha():
+        if letter in freq:
+            freq[letter] += 1
+        else:
+            freq[letter] = 1
+for key, value in freq.items():
+    print(f"{key} : {value}")
         
-    
-    
 
 
 
-     
-    

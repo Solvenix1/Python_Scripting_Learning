@@ -5,30 +5,22 @@ from pathlib import Path
 
 # for p in Path().iterdir():
 #     print(p)
-print(" ")
+# print(" ")
 
-my_dir = Path("Folder1")
-my_file = Path("text1.txt")
-# new_file = my_dir / "new_file.txt"
-new_file = my_dir.joinpath("new_file.txt")
+# my_dir = Path("Folder1")
+# my_file = Path("text1.txt")
+# # new_file = my_dir / "new_file.txt"
+# new_file = my_dir.joinpath("new_file.txt")
 
-p = Path("TempDir/Subdir")
+# p = Path("TempDir/Subdir")
 #p.mkdir(parents=True) 
 #parents mode allow us to create subfolders also
 #p.rmdir() 
 # #delete folder    
-f = Path("renamed.txt")
-# f.touch()
-f.rename("renamed.txt")
-f.unlink()
-
-
-
-
-
-
-
-
+# f = Path("renamed.txt")
+# # f.touch()
+# f.rename("renamed.txt")
+# f.unlink()
 
 
 # print(new_file)
@@ -59,8 +51,6 @@ f.unlink()
 #     print(file)
 
 #rglob in reccursive, simple glob in only folder 
-
-
 
 # print(my_dir.parent.absolute())
 # print(my_file.parent.absolute())

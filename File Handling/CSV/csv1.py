@@ -27,6 +27,7 @@ file_path = "simple_co2_skipone.csv"
 #         next(reader)
 #     for row in reader:
 #         print(row)
+#
 
 with open(file_path, 'r') as csvfile:
     reader = csv.DictReader(islice(csvfile,7,None))

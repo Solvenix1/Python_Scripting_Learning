@@ -3,7 +3,7 @@ from pathlib import Path
 
 # print(Path.cwd())
 
-# for p in Path().iterdir():
+# for p in Path().iterdir():   #show all file and subfolders in current folder
 #     print(p)
 # print(" ")
 
@@ -50,7 +50,7 @@ from pathlib import Path
 # for file in dotfiles.rglob("*.json",case_sensitive=True):
 #     print(file)
 
-#rglob in reccursive, simple glob in only folder 
+#rglob in recursive, simple glob in only folder 
 
 # print(my_dir.parent.absolute())
 # print(my_file.parent.absolute())

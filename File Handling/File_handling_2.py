@@ -174,19 +174,60 @@ from pathlib import Path
 # print(longest)
 
 #exercise 18
-freq = {}
+    # freq = {}
 
-with open("Letter_count.txt", "r") as file:
-    content = file.read().lower()
-for letter in content:
-    if letter.isalpha():
-        if letter in freq:
-            freq[letter] += 1
-        else:
-            freq[letter] = 1
-for key, value in freq.items():
-    print(f"{key} : {value}")
+    # with open("Letter_count.txt", "r") as file:
+    #     content = file.read().lower()
+    # for letter in content:
+    #     if letter.isalpha():
+    #         if letter in freq:
+    #             freq[letter] += 1
+    #         else:
+    #             freq[letter] = 1
+    # for key, value in freq.items():
+    #     print(f"{key} : {value}")
+
+#exercise 19
+# file_path = "search_words.txt"
+# c = 1
+# target = "Python"
+# with open(file_path, "r") as file:
+#     content = file.readlines()
+#     for i in content:
+#         if target in i:
+#             print(f"{target} found in line {c}")
+#         c += 1
+
+
+#exercise 20 
+# clean_file = "clean.txt"
+# messy_file = "messy.txt"
+
+# with open(messy_file, "r") as mfile, open(clean_file, 'w') as cfile:
+#     for line in mfile:
+#         cfile.write(line.strip() + " ")
+# with open(clean_file, 'r') as file:
+#     print(file.read())
+
+#exercise 21
+# with open("low_up_case.txt", 'r') as mfile:
+#     for letter in mfile:
+#         print(letter.swapcase())
+#sonra da bunu basqa fayla yaz so simple
+
+#exercise 22
+words = []
+new = []
+
+with open('story.txt', 'r') as file:
+    content = file.read()
+updated= content.replace("Java", "Python")
+with open('story.txt', 'w') as file:
+    file.write(updated)
+
+        
         
 
 
-
+# with open('story.txt', 'r')as file:
+#     print(file.read())

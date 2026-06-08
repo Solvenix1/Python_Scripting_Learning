@@ -1,6 +1,7 @@
 import os
 import json
 import csv
+import shutil
 from pathlib import Path
 
 #exercise 1-2
@@ -216,18 +217,63 @@ from pathlib import Path
 #sonra da bunu basqa fayla yaz so simple
 
 #exercise 22
-words = []
-new = []
+# words = []
+# new = []
 
-with open('story.txt', 'r') as file:
-    content = file.read()
-updated= content.replace("Java", "Python")
-with open('story.txt', 'w') as file:
-    file.write(updated)
-
-        
-        
-
+# with open('story.txt', 'r') as file:
+#     content = file.read()
+# updated= content.replace("Java", "Python")
+# with open('story.txt', 'w') as file:
+#     file.write(updated)
 
 # with open('story.txt', 'r')as file:
 #     print(file.read())
+
+
+#exercise 23
+# size = os.path.getsize("data.txt")
+# print(size)
+
+#exercise 24
+#done in shutil
+
+#exercise 25
+#rename
+# try:
+#     old_name = "old_name.txt"
+#     new_name = "new_name.txt"
+#     os.rename(old_name,new_name)
+# except FileNotFoundError:
+#     print(f"File named {old_name} not found")
+
+#exercise 26
+# try:
+#     old_name = "old_name2.txt"
+#     prefix = "2024_"
+#     if old_name.endswith(".txt"):
+#         os.rename(old_name, prefix + old_name)
+# except FileNotFoundError:
+#     print("File not found")
+
+# # exercise 27
+# try:
+#     if os.path.exists("temp2.txt"):
+#         os.remove("temp2.txt")
+# except FileNotFoundError:
+#     print("File not found")
+
+
+#exercise 28
+# file_path = "merging_files/merge.txt"
+# merger_name = os.path.basename(file_path)
+# for file in os.listdir("merging_files/"):
+#     if file == "merge.txt":
+#         continue
+#     if not(os.path.exists(file_path)):
+#         with open(file_path, "x") as merger:
+#             merger.write(file + '\n')
+#     else:
+#         with open(file_path, "a") as merger:
+#             merger.write(file + '\n')
+
+        

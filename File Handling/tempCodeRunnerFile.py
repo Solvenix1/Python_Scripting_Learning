@@ -1,1 +1,1 @@
-file.readlines().reverse()
+file_path
